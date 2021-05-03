@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title> Orbits </title> 
+     <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"> Orbits </a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    
+    <section>
+      <img src="/stars2.png" id="stars">
+      <h2 id="text"> The Future Is Now </h2>
+      <img src="/city.png" id="city">
+      <img src="/car.png" id="fly" style="--i:0;">
+      <img src="/car1.png" id="float" style="--i:1;">
+      <img src="/car2.png" id="drive" style="--i:2;">
+      <img src="/car3.png" id="drove" style="--i:3;">
+    </section>
+
+    <div class="sec" id="sec">
+      <h2> welcome To The Orb </h2>
+      <p> Electric vehicles are the technology of choice for eco-friendly car buyers because they have no emissions tied to their operation; they can be powered with clean, renewable energy; and even when charged with power from nonrenewable sources, the inherent fuel efficiency of electric motors versus internal combustion engines means they release less carbon per mile (when similar vehicles are compared).</p>
+      <hr><br>
+      <h3> LITHIUM-ION BATTERY </h3>
+      <p>The lithium-ion battery packs that power EVs have to be plugged into 240 volts and adequate current to charge in a reasonable number of hours, so buyers should count on additional costs for the hardware and installation. Clearly, renters and those without garages are at a disadvantages.</p><br><hr>
+      <br>
+      <P>In a country with gas prices as low as ours, this still-new technology needs a leg up to succeed, and incentives seem to be waning even as much of the world embraces or even mandates EV adoption.</P>
+
+      <h2> What We Offer</h2>
+      <p> Our Aim is to rteduce the impact of Gasoline/Diesel vehicles on our Planet Earth by Replacing old Engines with Electric, Hybrid and Plug-In Hybrid Vehicles</p>
+      <p> By Selecting a Plan, We can assist you in </p>
+      <ul>
+        <li><p>Getting a Brand new Vehicle on the spot or in due time</p></li>
+        <li><p>Exchange your old Vehicle for a New One</p></li>
+        <li><p>Replace Your old Diesel/Gas Engine for an Electric Engine </p></li>
+        <li><p>Insure your car safety </p></li>
+        <li><p>Ensure a long lasting Battery Life and gives you free charging priviledge at any charging spot for a year </p></li>
+      </ul>
+      <hr>
+      <br> <hr>
+
+      <h2> Our Plans </h2>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3> Aims </h3>
+              <p> what were abiout kgf jhfyj mhvkn mhvk nvjkh mhjkjnk ,jk</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3> Aims 2 </h3>
+              <p> what were abiout kgf jhfyj mhvkn mhvk nvjkh mhjkjnk ,jk</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3> Aims 2 </h3>
+              <p> what were abiout kgf jhfyj mhvkn mhvk nvjkh mhjkjnk ,jk</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <script>
+      let stars = document.getElementById('stars');
+      let city = document.getElementById('city');
+      let text = document.getElementById('text');
+      let header = document.querySelector('header');
+      let fly = document.getElementById('fly');
+      let float = document.getElementById('float');
+      let drive = document.getElementById('drive');
+      let drove = document.getElementById('drove');
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+
+        stars.style.left = value * 0.25 + 'px';
+        city.style.top = value * 0.3 + 'px';
+        text.style.marginTop = value *  1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+        fly.style.bottom = value * 0.65 + 'px';
+        float.style.top = value * 0.4 + 'px';
+        drive.style.left = value * 0.6 + 'px';
+        drove.style.bottom = value * 0.4 + 'px';
+      })
+    </script>
+  </body>
+</html>
